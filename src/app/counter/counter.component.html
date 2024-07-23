@@ -1,8 +1,12 @@
 <section class="counter">
   <h2>Counter</h2>
   <section class="counter-content">
-    <button mat-mini-fab (click)="decrement()">-</button>
+    <button mat-mini-fab (click)="decrement()" data-cy="decrement-button">
+      -
+    </button>
     <span data-cy="count">{{ count }}</span>
-    <button mat-mini-fab (click)="increment()">+</button>
+    <button mat-mini-fab (click)="increment()" data-cy="increment-button">
+      +
+    </button>
   </section>
 </section>
